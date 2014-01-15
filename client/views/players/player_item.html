@@ -1,0 +1,35 @@
+<template name="playerItem">
+    <div class="post">
+        <div class="post-content row-fluid">
+            <div class="span2">
+                <img alt="140x140" src="http://lorempixel.com/140/140/" class="img-thumbnail" />
+            </div>
+            <div class="span7">
+                <h3>
+                    {{playerName}}
+                </h3>
+                <ul>
+                    <li>
+                        Position: {{position}}
+                    </li>
+                    <li>
+                        Shoots: {{shoots}}
+                    </li>
+                    <li>
+                        Height: {{height}}
+                    </li>
+                    <li>
+                        Weight: {{weight}}
+                    </li>
+                    <li>
+                        Hometown: {{hometown}}
+                    </li>
+                </ul>
+            </div>
+            <div class="span2" style="float:right">
+                <a href="{{pathFor 'playerPage'}}" class="discuss btn">Discuss</a>
+            </div>
+        </div>
+
+    </div>
+</template>
