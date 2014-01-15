@@ -1,3 +1,8 @@
 <template name="playerPage">
     {{> playerItem}}
+    <ul class="comments">
+        {{#each comments}}
+        {{> comment}}
+        {{/each}}
+    </ul>
 </template>
